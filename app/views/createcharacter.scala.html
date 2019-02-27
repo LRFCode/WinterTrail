@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Create Character</title>
+    </head>
+    <body>
+        <h1>Create Character</h1>
+        <form method="post">
+            @helper.CSRF.formField
+            <label for="characterName">Enter your name</label>
+            <input type="text" name="characterName" id="characterName" placeholder="your name" required="required" pattern="[A-Za-z]{3,}" title="Name must be at least three REAL characters long">
+            <input type="submit" value="Start Adventure">
+        </form>
+    </body>
+</html>

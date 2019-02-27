@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Epic Winter Trail Adventure</title>
+    </head>
+    <body>
+       <h1>The Adventure Begins</h1>
+       <p>It is cold and snowing outside your one room cabin.</p>
+       <form method="post" action="/start">
+           @helper.CSRF.formField
+           <input type="submit" value="Go Outside">
+       </form>
+    </body>
+</html>

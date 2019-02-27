@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Outside Cabin</title>
+    </head>
+    <body>
+        <h1>Outside Cabin</h1>
+        <p>It is so cold you feel as if you might freeze.</p>
+        <form method="get">
+            <input type="submit" value="Go Back Inside Cabin">
+        </form>
+        <form method="post" action="/forest">
+            @helper.CSRF.formField
+            <input type="submit" value="Go Forward Down the Trail">
+        </form>
+    </body>
+</html>
